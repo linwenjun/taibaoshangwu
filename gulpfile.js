@@ -16,27 +16,29 @@ gulp.task('html', function () {
 });
 
 gulp.task('less', function() {
-    gulp.src('main.less')
+    gulp.src('src/main.less')
         .pipe(less())
         .pipe(gulp.dest('./'));
 })
 
 gulp.task('jade', function() {
-    gulp.src('index.jade')
-        .pipe(jade())
+    gulp.src('src/index.jade')
+        .pipe(jade({
+            pretty: true
+        }))
         .pipe(gulp.dest('./'));
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['index.html', 'main.css'], ['html']);
+    gulp.watch(['index.html'], ['html']);
 });
 
 gulp.task('watch-less', function() {
-    gulp.watch(['main.less'], ['less']);
+    gulp.watch(['src/main.less'], ['less']);
 })
 
 gulp.task('watch-jade', function() {
-    gulp.watch(['index.jade'], ['jade']);
+    gulp.watch(['src/index.jade'], ['jade']);
 })
 
 

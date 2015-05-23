@@ -1,4 +1,174 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #DEDEDE;
+  font-family: arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑';
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clear-fix {
+  overflow: hidden;
+}
+.clear-fix:after {
+  content: "";
+  width: 100%;
+  clear: both;
+}
+header {
+  height: 240px;
+  width: 1040px;
+  margin: 0 auto;
+  background: url("bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+  color: #FFF;
+}
+header .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+header .slogan {
+  position: absolute;
+  top: 110px;
+  left: 200px;
+  font-size: 27px;
+  font-weight: bold;
+}
+header a.english {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  color: #FFF;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+header a.english:hover {
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.header-bar {
+  width: 1040px;
+  margin: 0 auto;
+  height: 35px;
+  background-color: #FFF;
+}
+#middle {
+  width: 1040px;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+#middle .left {
+  float: left;
+  margin-left: 15px;
+  width: 210px;
+  padding-right: 5px;
+  overflow: hidden;
+}
+#middle .main {
+  float: left;
+  width: 535px;
+  margin-left: 20px;
+}
+#middle .main .summary,
+#middle .main .business {
+  margin-bottom: 20px;
+}
+#middle .main .summary .title,
+#middle .main .business .title {
+  border-bottom: 3px solid #bbbbbb;
+  margin-bottom: 20px;
+}
+#middle .main .summary .title span,
+#middle .main .business .title span {
+  padding: 6px;
+  border-bottom: 3px solid #000;
+  position: relative;
+  bottom: 3px;
+  color: #000;
+}
+#middle .main .summary .title span b,
+#middle .main .business .title span b {
+  color: #e19f58;
+  padding-right: 10px;
+}
+#middle .main .summary .desc,
+#middle .main .business .desc {
+  font-size: 13px;
+}
+#middle .main .summary .desc .photo,
+#middle .main .business .desc .photo {
+  margin-right: 10px;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000;
+  float: left;
+  background: url("002.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+#middle .main .business ul {
+  text-align: justify;
+}
+#middle .main .business ul li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+#middle .main .business ul:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  height: 0;
+}
+#middle .right {
+  float: right;
+  width: 225px;
+  margin-right: 15px;
+}
+.industry,
+.link {
+  border: 1px solid #999999;
+  border-radius: 8px;
+  /* box-shadow: 2px 1px 1px rgba(0,0,0,0.3); */
+  margin-bottom: 20px;
+}
+.industry dl,
+.link dl {
+  margin: 0;
+}
+.industry dl dt,
+.link dl dt {
+  margin: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #999999;
+  text-indent: 5px;
+}
+.industry dl dt span,
+.link dl dt span {
+  border-left: 4px solid #157ba4;
+  padding-left: 10px;
+}
+.industry dl dt b,
+.link dl dt b {
+  color: #e19f58;
+}
+.industry dl dd,
+.link dl dd {
+  font-size: 14px;
+  margin: 8px 12px;
+  padding: 7px 20px;
+  padding-right: 0;
+  border-bottom: 1px solid #bbbbbb;
 }
